@@ -51,20 +51,20 @@ A robust Course Management API built with Node.js and MongoDB. It supports user 
 
 ## Setup Instructions
 
-# Step 1: Clone the repository
+Step 1: Clone the repository
 git clone <repository-url>
 cd <repository-folder>
 
-# Step 2: Install dependencies
+Step 2: Install dependencies
 npm install
 
-# Step 3: Configure environment variables
-# Create a .env file in the root directory and add the following:
-# db_url2=<your-mongo-db-url>
-# jwtsec=<user-jwt-secret>
-# jwtsecadmin=<admin-jwt-secret>
+Step 3: Configure environment variables
+Create a .env file in the root directory and add the following:
+db_url2=<your-mongo-db-url>
+jwtsec=<user-jwt-secret>
+jwtsecadmin=<admin-jwt-secret>
 
-# Step 4: Run the server
+Step 4: Run the server
 node index.js
 
 # The server will start on http://localhost:3000
