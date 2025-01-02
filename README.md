@@ -70,26 +70,38 @@ node index.js
 # The server will start on http://localhost:3000
 
 
+---
+
 ## API Endpoints
-User Routes (/api/v1/user)
-POST /signup: User registration.
-POST /signin: User login.
-GET /purchases: Retrieve user purchase history.
-Admin Routes (/api/v1/admin)
-POST /signup: Admin registration.
-POST /signin: Admin login.
-POST /create-course: Create a new course (requires authentication).
-PUT /update-course: Update an existing course (requires authentication).
-GET /course/bulk: Retrieve all courses created by the admin (requires authentication).
-Course Routes (/api/v1/course)
-Placeholder for potential course-related endpoints for users.
-Code Structure
-index.js: Entry point for the application, sets up routes and connects to MongoDB.
-db.js: Defines MongoDB schemas and models for users, admins, courses, and purchases.
-routes/:
-user.js: Handles user-related endpoints.
-admin.js: Handles admin-related endpoints.
-course.js: Placeholder for course-related endpoints.
-middlewares/:
-adminmw.js: Middleware for admin authentication.
-usermw.js: Middleware for user authentication.
+
+### User Routes (`/api/v1/user`)
+- **POST /signup**: User registration.
+- **POST /signin**: User login.
+- **GET /purchases**: Retrieve user purchase history.
+
+### Admin Routes (`/api/v1/admin`)
+- **POST /signup**: Admin registration.
+- **POST /signin**: Admin login.
+- **POST /create-course**: Create a new course (requires authentication).
+- **PUT /update-course**: Update an existing course (requires authentication).
+- **GET /course/bulk**: Retrieve all courses created by the admin (requires authentication).
+
+### Course Routes (`/api/v1/course`)
+- Placeholder for potential course-related endpoints for users.
+
+---
+
+## Code Structure
+
+- **index.js**: Entry point for the application, sets up routes and connects to MongoDB.
+- **db.js**: Defines MongoDB schemas and models for users, admins, courses, and purchases.
+- **routes/**:
+  - `user.js`: Handles user-related endpoints.
+  - `admin.js`: Handles admin-related endpoints.
+  - `course.js`: Placeholder for course-related endpoints.
+- **middlewares/**:
+  - `adminmw.js`: Middleware for admin authentication.
+  - `usermw.js`: Middleware for user authentication.
+
+---
+
